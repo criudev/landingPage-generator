@@ -3,7 +3,6 @@
 Origen del visitante:
 - Instagram Ads
 - Facebook Ads
-- Otro: __________
 
 Estado del usuario al llegar:
 - Está en móvil
@@ -11,14 +10,19 @@ Estado del usuario al llegar:
 - Decide en pocos segundos
 - Escanea contenido, no lee en detalle
 
-Objetivo del anuncio:
-(Qué prometía el anuncio al usuario)
+Objetivo del anuncio: 
+ - captar la atencion del usuario para que agende una hora por whatsapp
+ <!--* (Qué prometía el anuncio al usuario)-->
 
 Mensaje principal del anuncio:
-(Frase clave que el usuario vio antes de entrar)
+recuperate de tu lesion, recupera movilidad
+ <!--* (Frase clave que el usuario vio antes de entrar)-->
 
-Oferta o propuesta mostrada en el anuncio:
-(Descuento, beneficio, resultado, oportunidad)
+Oferta o propuesta mostrada en el anuncio:       
+<!-- sin descuento   
+* 20% de descuento en la primera sesion
+* (Descuento, beneficio, resultado, oportunidad)
+-->
 
 Nivel de conocimiento del usuario sobre el negocio:
 - No lo conoce
@@ -30,36 +34,38 @@ Nivel de conocimiento del usuario sobre el negocio:
 # 🎯 OBJETIVO DE LA LANDING
 
 Acción principal esperada del visitante:
-(Definir UNA sola acción concreta)
+<!-- agendar una sesion por whatsapp 
+* (Definir UNA sola acción concreta)
 
-Ejemplos válidos:
-- Iniciar conversación
-- Solicitar información
-- Comprar
-- Registrarse
-- Agendar
-
+* Ejemplos válidos:
+* Iniciar conversación
+* Solicitar información
+* Comprar
+* Registrarse
+* Agendar
+-->
 Resultado de negocio esperado:
-(Qué éxito representa para el negocio)
+aumentar la cantidad de clientes que quieran atenderse
+<!--(Qué éxito representa para el negocio)
 
-Ejemplos:
-- Generar clientes potenciales
-- Aumentar ventas
-- Captar contactos calificados
+* Ejemplos:
+* Generar clientes potenciales
+* Aumentar ventas
+* Captar contactos calificados
 
-Conversión secundaria (opcional):
-(Acción alternativa si no realiza la principal)
-
+* Conversión secundaria (opcional):
+* (Acción alternativa si no realiza la principal)
+ --> 
 ---
 
 # 👤 PERFIL DEL VISITANTE IDEAL
 
-Problema principal que quiere resolver:
-Resultado que desea obtener:
-Motivación emocional de la decisión:
-Principal duda antes de actuar:
-Factor que genera desconfianza:
-Factor que genera confianza:
+Problema principal que quiere resolver: poca visibilidad
+Resultado que desea obtener: aumentar la cantidad de clientes que quieran atenderse
+Motivación emocional de la decisión: que quieran atenderse par amejroar su salud
+Principal duda antes de actuar: que no lo conozcan
+Factor que genera desconfianza: que no lo conozcan
+Factor que genera confianza: que lo conozcan y que tenga buenas reseñas
 
 Nivel de urgencia del visitante:
 - Baja
@@ -87,9 +93,10 @@ La landing debe:
 
 # ESTILO VISUAL
 
-colores: 
-*COLORES EN ORDEN DESCENDENTE*
+colores: blanco, azul clinico, verde clinico, anaranjado
+<!--*COLORES EN ORDEN DESCENDENTE*-->
 estilo:	
-*INFANTIL,MODERNO, LLAMATIVO, FLUOR, CIBERPUNK, ETC*
+moderno, limpio, profesional, minimalista, cercania.
+<!--*INFANTIL,MODERNO, LLAMATIVO, FLUOR, CIBERPUNK, ETC*-->
 
 
