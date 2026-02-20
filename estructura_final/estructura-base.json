@@ -1,0 +1,107 @@
+{
+  "estructura_base": {
+    "reglas_globales": {
+      "mobile_first": true,
+      "html_semantico": true,
+      "css_separado": true,
+      "tiempo_lectura_max_segundos": 15,
+      "smooth_scroll_o_modal": true
+    },
+    "secciones": {
+      "hero": {
+        "obligatorio": true,
+        "orden": 1,
+        "componentes": {
+          "top_nav": {
+            "logo": true,
+            "boton_primario": true,
+            "menu_hamburguesa": false,
+            "sticky_transparente": true
+          },
+          "eyebrow": true,
+          "headline_h1": {
+            "formula": "[Beneficio] + [Sin dolor]",
+            "min_palabras": 5,
+            "max_palabras": 7,
+            "gradiente_palabra_clave": true
+          },
+          "subheadline": {
+            "lineas_min": 2,
+            "lineas_max": 3
+          },
+          "cta_principal": {
+            "altura_min_px": 48,
+            "microcopy_seguridad": true
+          },
+          "social_proof_above_fold": true,
+          "elemento_visual": {
+            "tipo": [
+              "micro_ui",
+              "mockup",
+              "glass_panel"
+            ],
+            "posicion": "fin_primer_scroll"
+          }
+        }
+      },
+      "problema_solucion": {
+        "obligatorio": true,
+        "orden": 2,
+        "descripcion_dolor": true,
+        "solucion_clara": true,
+        "diferenciador_clave": true
+      },
+      "descubrimiento": {
+        "obligatorio": true,
+        "orden": 3,
+        "bloques": {
+          "min": 3,
+          "max": 6,
+          "componentes": {
+            "nombre": true,
+            "problema_que_resuelve": true,
+            "beneficio": true,
+            "imagen_webp": true
+          }
+        },
+        "variacion_creador": {
+          "ejemplos_contenido": true,
+          "mostrar_resultados": true
+        }
+      },
+      "confianza_beneficios": {
+        "obligatorio": true,
+        "orden": 4,
+        "bloques": {
+          "min": 3,
+          "max": 5,
+          "componentes": {
+            "icono": true,
+            "titulo": true,
+            "frase_concreta": true
+          }
+        },
+        "prueba_social_real": true
+      },
+      "accion_simple": {
+        "obligatorio": true,
+        "orden": 5,
+        "tipo": [
+          "faq_acordeon",
+          "bloques_objeciones"
+        ],
+        "reducir_friccion": true
+      },
+      "cta_final": {
+        "obligatorio": true,
+        "orden": 6,
+        "recordatorio_beneficio": true,
+        "cta_grande": {
+          "altura_min_px": 48
+        },
+        "microcopy_seguridad": true
+      }
+    }
+  }
+}
+
