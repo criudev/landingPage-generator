@@ -1,0 +1,224 @@
+ {
+  configuracion_negocio: {
+    reglas: {
+      auto_deduccion_campos_vacios: true,
+      h1_formula: {
+        longitud_min_palabras: 5,
+        longitud_max_palabras: 7,
+        estructura: [Beneficio Final] + [Cómo lo logras / Sin el dolor habitual]
+      }
+    },
+    tipo_negocio: null,
+    datos_transversales: {
+      eyebrow: null,
+      mata_objeciones: null
+    },
+    creador_contenido: {
+      redes_sociales: [],
+      nombres: {
+        artistico: null,
+        real: null,
+        comercial: null
+      },
+      ubicacion: {
+        pais: Chile,
+        modalidad: null
+      },
+      metricas: {
+        seguidores: null,
+        visualizaciones_promedio: null
+      },
+      propuesta_valor_marcas: {
+        beneficio: null,
+        diferenciador: null,
+        estilo: null,
+        resultados_generados: {
+          alcance: null,
+          conversion: null
+        }
+      },
+      objetivo_comercial: null
+    },
+    servicio: {
+      redes_sociales_contacto: [],
+      nombre_negocio: null,
+      nicho_profesion: null,
+      ubicacion: null,
+      problema_principal: null,
+      publico_objetivo: null,
+      diferenciador: null,
+      cta_principal: null,
+      clasificacion_interna: {
+        nivel_autoridad: null,
+        urgencia_cliente: null,
+        riesgo_que_elimina: null
+      }
+    },
+    producto: {
+      redes_sociales_contacto: [],
+      nombre_comercial: null,
+      nicho: null,
+      ubicacion: null,
+      descripcion: null,
+      productos_principales: [],
+      problema_principal: null,
+      cta_principal: null
+    },
+    plan_seleccionado: {
+      tipo: !null,
+      opciones: [START, PRO, ELITE]
+    }
+  }
+},
+
+ {
+  configuracion_visual: {
+    reglas: {
+      css_ligero_sin_frameworks: true,
+      mobile_first_extremo: true,
+      fcp_max_segundos: 1.5
+    },
+    tema_principal: {
+      nombre: Contraste Dinamico,
+      modo_oscuro_por_defecto: true,
+      colores_acento_permitidos: [
+        purple,
+        neon,
+        cyan
+      ],
+      usar_acento_en: [
+        botones,
+        palabras_clave_h1,
+        elementos_destacados
+      ]
+    },
+    estilo_visual: {
+      tipo: Glassmorphism,
+      permitido: [
+        paneles_translucidos,
+        micro_ui_abstracto,
+        product_mockups
+      ],
+      prohibido: [
+        fotos_stock_genericas_personas
+      ]
+    },
+    tipografia_lectura: {
+      prioridad: alta_legibilidad_movil,
+      h1: {
+        permitir_gradiente_palabras_clave: true,
+        max_palabras_con_gradiente: 2
+      }
+    },
+    bordes_sombras: {
+      radio_borde_min_px: 12,
+      radio_borde_max_px: 24,
+      sombras: suaves_elegantes_sutiles
+    },
+    iconografia: {
+      estilo: limpia_coherente_funcional
+    },
+    interacciones_animaciones: {
+      solo_css: true,
+      ejemplos_permitidos: [
+        fade-in-up,
+        scale-in,
+        hover-glow
+      ],
+      prohibido_js_pesado: true
+    },
+    ux_ui_movil: {
+      touch_target_min_altura_px: 48,
+      zero_friction: true,
+      permitido: [
+        smooth_scroll,
+        modal_instantaneo
+      ],
+      prohibido: [
+        recargas_pagina,
+        navegacion_lenta
+      ]
+    }
+  }
+},
+
+ logica_renderizado_por_plan: {
+      START: {
+        descubrimiento: {
+          profundidad: basica
+        },
+        confianza_beneficios: {
+          bloques: 3
+        },
+        accion_simple: {
+          incluir: true
+        },
+		formulario: {
+		  incluir: false
+     	 },
+		 analitycs:{
+		  incluir: false
+		}
+      },
+      PRO: {
+        descubrimiento: {
+          profundidad: alta
+        },
+        confianza_beneficios: {
+          bloques: 4
+        },
+        accion_simple: {
+          incluir: true
+        },
+        formulario: {
+        	incluir: true
+        },
+        analitycs:{
+        	incluir: true
+        }
+      },
+      ELITE: {
+        descubrimiento: {
+          profundidad: avanzada
+        },
+        confianza_beneficios: {
+          bloques: 5
+        },
+        accion_simple: {
+          incluir: true
+        },
+        formulario: {
+          incluir: true
+         },
+          analitycs:{
+          incluir: true
+         },
+         catalogo:{
+         	incluir: true
+         }
+      }
+    },
+
+    reglas_validacion_datos: {
+    	{
+    	  obligatorios_por_tipo: {
+    	    SERVICIO: [nombre_negocio, nicho_profesion, cta_principal],
+    	    PRODUCTO: [nombre_comercial, descripcion, cta_principal],
+    	    CREADOR: [nombres, objetivo_comercial]
+    	  },
+    	  prohibido_inventar: [
+    	    seguidores,
+    	    visualizaciones_promedio,
+    	    años_experiencia,
+    	    numero_clientes,
+    	    reviews_estrellas,
+    	    empresas_clientes
+    	  ],
+    	  permitido_deducir: [
+    	    problema_principal,
+    	    publico_objetivo,
+    	    beneficio_final,
+    	    diferenciador
+    	  ]
+    	}
+    }
