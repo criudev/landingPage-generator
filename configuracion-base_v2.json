@@ -1,0 +1,426 @@
+{
+  "meta_framework": {
+    "version": "2026.1",
+    "paradigma": "Action-First Fluid Design",
+    "filosofia": "Interfaces que predicen, no que esperan"
+  },
+  "configuracion_negocio": {
+    "reglas": {
+      "auto_deduccion_campos_vacios": true,
+      "h1_formula": {
+        "longitud_min_palabras": 5,
+        "longitud_max_palabras": 7,
+        "estructura": "[Beneficio Final] + [Cómo lo logras / Sin el dolor habitual]",
+        "tipografia_variable": true,
+        "permite_animacion_hover": true
+      }
+    },
+    "tipo_negocio": null,
+    "datos_transversales": {
+      "eyebrow": null,
+      "mata_objeciones": null,
+      "tldr_hero": {
+        "descripcion": "Resumen ultra-breve de 1 línea para usuarios impacientes",
+        "max_caracteres": 80,
+        "valor": null
+      }
+    },
+    "hiperpersonalizacion": {
+      "habilitado": true,
+      "segmentos_usuario": {
+        "nuevo_visitante": {
+          "mostrar_social_proof_agresivo": true,
+          "expandir_beneficios": true
+        },
+        "visitante_recurrente": {
+          "ir_directo_cta": true,
+          "ocultar_intro_extendida": true
+        }
+      },
+      "contexto_dinamico": {
+        "detectar_hora_dia": true,
+        "adaptar_saludo": true,
+        "detectar_dispositivo": true
+      }
+    },
+    "creador_contenido": {
+      "redes_sociales": [],
+      "nombres": {
+        "artistico": null,
+        "real": null,
+        "comercial": null
+      },
+      "ubicacion": {
+        "pais": "Chile",
+        "modalidad": null
+      },
+      "metricas": {
+        "seguidores": null,
+        "visualizaciones_promedio": null
+      },
+      "propuesta_valor_marcas": {
+        "beneficio": null,
+        "diferenciador": null,
+        "estilo": null,
+        "resultados_generados": {
+          "alcance": null,
+          "conversion": null
+        }
+      },
+      "objetivo_comercial": null
+    },
+    "servicio": {
+      "redes_sociales_contacto": [],
+      "nombre_negocio": null,
+      "nicho_profesion": null,
+      "ubicacion": null,
+      "problema_principal": null,
+      "publico_objetivo": null,
+      "diferenciador": null,
+      "cta_principal": null,
+      "clasificacion_interna": {
+        "nivel_autoridad": null,
+        "urgencia_cliente": null,
+        "riesgo_que_elimina": null
+      }
+    },
+    "producto": {
+      "redes_sociales_contacto": [],
+      "nombre_comercial": null,
+      "nicho": null,
+      "ubicacion": null,
+      "descripcion": null,
+      "productos_principales": [],
+      "problema_principal": null,
+      "cta_principal": null
+    },
+    "plan_seleccionado": {
+      "tipo": "!null",
+      "opciones": ["START", "PRO", "ELITE"]
+    }
+  },
+  "configuracion_visual": {
+    "reglas": {
+      "css_ligero_sin_frameworks": true,
+      "mobile_first_extremo": true,
+      "fcp_max_segundos": 1.5,
+      "total_bundle_css_max_kb": 50,
+      "cero_diseno_plano": true,
+      "profundidad_obligatoria": true
+    },
+    "tema_principal": {
+      "nombre": "Liquid Glass 2026",
+      "modo_oscuro_por_defecto": true,
+      "fondo_base": {
+        "tipo": "gradiente_dinamico",
+        "colores": ["#0a0a0f", "#1a1a2e", "#0f0f1a"],
+        "angulo_inicial": 135,
+        "animacion_sutil": true
+      },
+      "colores_acento_permitidos": ["#a855f7", "#06b6d4", "#22d3ee", "#f472b6", "#4ade80"],
+      "usar_acento_en": ["botones", "palabras_clave_h1", "elementos_destacados", "bordes_glow", "iconos_interactivos"],
+      "gradientes_texto": {
+        "habilitado": true,
+        "direccion": "to right",
+        "colores_default": ["#a855f7", "#06b6d4"]
+      }
+    },
+    "liquid_glass": {
+      "habilitado": true,
+      "propiedades_base": {
+        "backdrop_filter": "blur(20px) saturate(180%)",
+        "background": "rgba(255, 255, 255, 0.05)",
+        "border": "1px solid rgba(255, 255, 255, 0.1)",
+        "box_shadow": "0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)"
+      },
+      "variantes": {
+        "frosted_light": {
+          "backdrop_filter": "blur(12px)",
+          "background": "rgba(255, 255, 255, 0.08)"
+        },
+        "frosted_heavy": {
+          "backdrop_filter": "blur(40px) saturate(200%)",
+          "background": "rgba(255, 255, 255, 0.03)"
+        },
+        "glow_border": {
+          "border": "1px solid rgba(168, 85, 247, 0.3)",
+          "box_shadow": "0 0 20px rgba(168, 85, 247, 0.15)"
+        }
+      }
+    },
+    "capas_profundidad": {
+      "habilitado": true,
+      "niveles": {
+        "fondo": { "z_index": 0, "blur": "none" },
+        "contenido_base": { "z_index": 10, "elevation": "4px" },
+        "tarjetas": { "z_index": 20, "elevation": "8px" },
+        "modales": { "z_index": 100, "elevation": "24px" },
+        "elementos_flotantes": { "z_index": 50, "elevation": "16px" }
+      },
+      "sombras_por_nivel": {
+        "nivel_1": "0 2px 8px rgba(0,0,0,0.2)",
+        "nivel_2": "0 4px 16px rgba(0,0,0,0.25)",
+        "nivel_3": "0 8px 32px rgba(0,0,0,0.3)",
+        "nivel_4": "0 16px 48px rgba(0,0,0,0.4)"
+      }
+    },
+    "imperfeccion_intencional": {
+      "habilitado": true,
+      "descripcion": "Elementos humanos para evitar aspecto de plantilla IA",
+      "human_scribbles": {
+        "flechas_dibujadas": true,
+        "subrayados_asperos": true,
+        "circulos_highlight": true,
+        "estilo_svg": "hand-drawn",
+        "color_default": "rgba(168, 85, 247, 0.8)"
+      },
+      "ilustraciones_organicas": {
+        "permitido": true,
+        "estilo": ["blob_shapes", "organic_curves", "abstract_doodles"]
+      },
+      "texturas_sutiles": {
+        "noise_overlay": true,
+        "opacidad_noise": 0.03
+      }
+    },
+    "contexto_vertical": {
+      "sector": null,
+      "subtipo": null,
+      "hero_template": null
+    },
+    "estilo_visual": {
+      "tipo": "Liquid_Glass_Maximalista",
+      "permitido": [
+        "paneles_translucidos",
+        "micro_ui_abstracto",
+        "product_mockups",
+        "bento_grids",
+        "elementos_3d_sutiles",
+        "gradientes_mesh",
+        "bordes_luminosos"
+      ],
+      "prohibido": [
+        "fotos_stock_genericas_personas",
+        "diseno_plano_sin_profundidad",
+        "bordes_duros_sin_suavizado",
+        "fondos_solidos_monotonos"
+      ]
+    },
+    "tipografia": {
+      "prioridad": "alta_legibilidad_movil",
+      "variable_fonts": {
+        "habilitado": true,
+        "fuentes_recomendadas": ["Inter Variable", "Space Grotesk", "Satoshi Variable"],
+        "propiedades_variables": ["wght", "wdth", "slnt"]
+      },
+      "h1": {
+        "permitir_gradiente_palabras_clave": true,
+        "max_palabras_con_gradiente": 2,
+        "tipografia_expresiva": true,
+        "peso_variable_hover": true,
+        "letra_spacing_dinamico": true,
+        "tamaño_mobile": "clamp(2rem, 8vw, 4rem)",
+        "tamaño_desktop": "clamp(3rem, 6vw, 5rem)"
+      },
+      "h2": {
+        "expresiva": true,
+        "permite_animacion": true,
+        "tamaño": "clamp(1.5rem, 4vw, 2.5rem)"
+      },
+      "cuerpo": {
+        "tamaño_min": "16px",
+        "line_height": 1.6,
+        "max_width_caracteres": 65
+      }
+    },
+    "bordes_sombras": {
+      "radio_borde_min_px": 16,
+      "radio_borde_max_px": 32,
+      "radio_estandar": {
+        "pequeño": "12px",
+        "medio": "20px",
+        "grande": "28px",
+        "circular": "9999px"
+      },
+      "sombras": "capas_suaves_profundidad",
+      "bordes_luminosos": {
+        "habilitado": true,
+        "intensidad": "sutil",
+        "color_glow": "var(--color-acento)"
+      }
+    },
+    "iconografia": {
+      "estilo": "limpia_coherente_funcional",
+      "stroke_width": 1.5,
+      "tamaño_minimo": "24px",
+      "animacion_hover": true
+    },
+    "interacciones_animaciones": {
+      "solo_css": true,
+      "motion_reduced_respetar": true,
+      "animaciones_entrada": {
+        "fade_in_up": {
+          "duracion": "0.6s",
+          "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+          "delay_escalonado": "0.1s"
+        },
+        "scale_in": {
+          "duracion": "0.5s",
+          "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+        },
+        "blur_in": {
+          "duracion": "0.8s",
+          "easing": "ease-out"
+        }
+      },
+      "micro_interacciones": {
+        "botones": {
+          "hover_scale": 1.02,
+          "hover_glow": true,
+          "active_scale": 0.98,
+          "transicion": "all 0.2s ease"
+        },
+        "tarjetas": {
+          "hover_lift": "translateY(-4px)",
+          "hover_shadow_intensifica": true,
+          "transicion": "all 0.3s ease"
+        },
+        "links": {
+          "underline_animado": true,
+          "color_transicion": true
+        }
+      },
+      "scrollytelling": {
+        "habilitado": true,
+        "tipo": "intersection_observer",
+        "threshold": 0.2,
+        "animaciones_seccion": {
+          "revelar_contenido": true,
+          "parallax_sutil": true,
+          "cambio_fondo_gradual": false
+        }
+      },
+      "prohibido_js_pesado": true
+    },
+    "ux_ui_movil": {
+      "touch_target_min_altura_px": 48,
+      "touch_target_min_anchura_px": 48,
+      "zero_friction": true,
+      "auto_layout": {
+        "habilitado": true,
+        "gap_estandar": "16px",
+        "padding_contenedor": "clamp(16px, 5vw, 32px)"
+      },
+      "permitido": ["smooth_scroll", "modal_instantaneo", "acordeon_fluido", "swipe_gestures"],
+      "prohibido": ["recargas_pagina", "navegacion_lenta", "scroll_hijacking_agresivo", "popups_intrusivos"]
+    }
+  },
+  "configuracion_accesibilidad": {
+    "obligatorio": true,
+    "wcag_nivel": "AA",
+    "alto_contraste": {
+      "ratio_minimo_texto": 4.5,
+      "ratio_minimo_texto_grande": 3,
+      "ratio_minimo_ui": 3
+    },
+    "focus_visible": {
+      "outline_style": "2px solid var(--color-acento)",
+      "outline_offset": "2px"
+    },
+    "motion": {
+      "respetar_prefers_reduced_motion": true,
+      "fallback_sin_animacion": true
+    },
+    "semantica": {
+      "landmarks_obligatorios": ["header", "main", "footer", "nav"],
+      "headings_jerarquicos": true,
+      "aria_labels_interactivos": true
+    },
+    "tipografia_legible": {
+      "font_size_minimo": "16px",
+      "line_height_minimo": 1.5,
+      "letter_spacing_minimo": "0.01em"
+    }
+  },
+  "logica_renderizado_por_plan": {
+    "START": {
+      "descubrimiento": {
+        "profundidad": "basica",
+        "bento_grid": { "columnas": 2, "filas_max": 2 }
+      },
+      "confianza_beneficios": { "bloques": 3 },
+      "accion_simple": { "incluir": true },
+      "scrollytelling": { "basico": true },
+      "formulario": { "incluir": false },
+      "analytics": { "incluir": false },
+      "hiperpersonalizacion": { "incluir": false }
+    },
+    "PRO": {
+      "descubrimiento": {
+        "profundidad": "alta",
+        "bento_grid": { "columnas": 3, "filas_max": 3 }
+      },
+      "confianza_beneficios": { "bloques": 4 },
+      "accion_simple": { "incluir": true },
+      "scrollytelling": { "avanzado": true },
+      "formulario": { "incluir": true },
+      "analytics": { "incluir": true },
+      "hiperpersonalizacion": { "incluir": true, "nivel": "basico" }
+    },
+    "ELITE": {
+      "descubrimiento": {
+        "profundidad": "avanzada",
+        "bento_grid": { "columnas": 4, "filas_max": 4, "items_destacados": true }
+      },
+      "confianza_beneficios": { "bloques": 5 },
+      "accion_simple": { "incluir": true },
+      "scrollytelling": { "cinematico": true },
+      "formulario": { "incluir": true },
+      "analytics": { "incluir": true },
+      "hiperpersonalizacion": { "incluir": true, "nivel": "avanzado" },
+      "catalogo": { "incluir": true },
+      "human_scribbles": { "incluir": true }
+    }
+  },
+  "reglas_validacion_datos": {
+    "obligatorios_por_tipo": {
+      "SERVICIO": ["nombre_negocio", "nicho_profesion", "cta_principal"],
+      "PRODUCTO": ["nombre_comercial", "descripcion", "cta_principal"],
+      "CREADOR": ["nombres", "objetivo_comercial"]
+    },
+    "prohibido_inventar": [
+      "seguidores",
+      "visualizaciones_promedio",
+      "años_experiencia",
+      "numero_clientes",
+      "reviews_estrellas",
+      "empresas_clientes",
+      "ingresos",
+      "porcentajes_conversion"
+    ],
+    "permitido_deducir": [
+      "problema_principal",
+      "publico_objetivo",
+      "beneficio_final",
+      "diferenciador",
+      "tono_comunicacion",
+      "paleta_colores_sugerida"
+    ]
+  },
+  "rendimiento": {
+    "metricas_objetivo": {
+      "fcp_max_ms": 1500,
+      "lcp_max_ms": 2500,
+      "cls_max": 0.1,
+      "fid_max_ms": 100
+    },
+    "optimizaciones_obligatorias": {
+      "critical_css_inline": true,
+      "lazy_load_imagenes": true,
+      "preload_fuentes": true,
+      "minificar_output": false,
+      "imagenes_webp_avif": true,
+      "font_display_swap": true
+    }
+  }
+}

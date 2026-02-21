@@ -1,0 +1,535 @@
+{
+  "estructura_base": {
+    "meta": {
+      "version": "2026.1",
+      "paradigma": "Scrollytelling Cinematico + Action-First",
+      "filosofia": "Cada scroll es un capítulo, cada sección una revelación"
+    },
+    "reglas_globales": {
+      "mobile_first": true,
+      "html_semantico": true,
+      "css_separado": true,
+      "tiempo_lectura_max_segundos": 12,
+      "smooth_scroll_o_modal": true,
+      "scrollytelling_obligatorio": true,
+      "bento_grid_en_descubrimiento": true,
+      "liquid_glass_obligatorio": true,
+      "cero_diseno_plano": true,
+      "accesibilidad_wcag_aa": true
+    },
+    "layout_sistema": {
+      "contenedor_max_width": "1200px",
+      "padding_lateral": "clamp(16px, 5vw, 48px)",
+      "gap_secciones": "clamp(64px, 12vh, 120px)",
+      "auto_layout": {
+        "habilitado": true,
+        "gap_default": "16px",
+        "alineacion_default": "center"
+      }
+    },
+    "secciones": {
+      "hero": {
+        "obligatorio": true,
+        "orden": 1,
+        "scrollytelling": {
+          "entrada": "fade-blur-in",
+          "duracion": "0.8s",
+          "trigger": "inmediato"
+        },
+        "componentes": {
+          "top_nav": {
+            "logo": true,
+            "boton_primario": true,
+            "menu_hamburguesa": false,
+            "sticky": true,
+            "estilo": "liquid_glass_frosted",
+            "altura": "64px",
+            "transicion_scroll": {
+              "opacidad_inicial": 0.8,
+              "opacidad_scroll": 0.95,
+              "blur_incrementa": true
+            }
+          },
+          "tldr_badge": {
+            "obligatorio": true,
+            "descripcion": "Resumen de 1 línea para usuarios impacientes",
+            "estilo": "pill_glass",
+            "posicion": "encima_eyebrow",
+            "max_caracteres": 80
+          },
+          "eyebrow": {
+            "obligatorio": true,
+            "estilo": "texto_pequeño_gradiente",
+            "animacion": "fade-in-up"
+          },
+          "headline_h1": {
+            "formula": "[Beneficio] + [Sin dolor]",
+            "min_palabras": 5,
+            "max_palabras": 7,
+            "tipografia": {
+              "variable_font": true,
+              "expresiva_maximalista": true,
+              "tamaño": "clamp(2.5rem, 8vw, 5rem)",
+              "peso": "700-900",
+              "letter_spacing": "-0.02em"
+            },
+            "gradiente_palabra_clave": {
+              "habilitado": true,
+              "max_palabras": 2,
+              "animacion_hover": true
+            },
+            "animacion": {
+              "tipo": "reveal-por-palabra",
+              "delay_entre_palabras": "0.05s"
+            }
+          },
+          "subheadline": {
+            "lineas_min": 2,
+            "lineas_max": 3,
+            "opacidad": 0.8,
+            "animacion": "fade-in-up",
+            "delay": "0.3s"
+          },
+          "cta_principal": {
+            "altura_min_px": 52,
+            "padding_horizontal": "32px",
+            "border_radius": "16px",
+            "estilo": "liquid_glass_glow",
+            "microcopy_seguridad": {
+              "obligatorio": true,
+              "posicion": "debajo",
+              "ejemplos": ["Sin compromiso", "Cancela cuando quieras", "Respuesta en 24h"]
+            },
+            "micro_interaccion": {
+              "hover_scale": 1.03,
+              "hover_glow": true,
+              "active_scale": 0.98,
+              "ripple_effect": true
+            }
+          },
+          "cta_secundario": {
+            "opcional": true,
+            "estilo": "ghost_glass",
+            "altura_min_px": 48
+          },
+          "social_proof_above_fold": {
+            "obligatorio": true,
+            "tipos_permitidos": [
+              "avatares_clientes",
+              "logos_empresas",
+              "contador_usuarios",
+              "rating_estrellas"
+            ],
+            "estilo": "pill_glass_sutil",
+            "animacion": "fade-in-up",
+            "delay": "0.5s"
+          },
+          "elemento_visual": {
+            "tipo": ["micro_ui", "mockup_3d", "glass_panel", "bento_preview", "blob_animado"],
+            "posicion": "lateral_derecho_o_inferior",
+            "animacion": "float-subtle",
+            "parallax_sutil": true
+          },
+          "human_scribble": {
+            "opcional_elite": true,
+            "tipos": ["flecha_hacia_cta", "subrayado_beneficio", "circulo_highlight"],
+            "color": "var(--color-acento)",
+            "animacion": "draw-in"
+          }
+        }
+      },
+      "problema_solucion": {
+        "obligatorio": true,
+        "orden": 2,
+        "scrollytelling": {
+          "entrada": "fade-in-up",
+          "threshold": 0.2,
+          "animacion_escalonada": true
+        },
+        "layout": {
+          "tipo": "dos_columnas_asimétricas",
+          "mobile": "stack_vertical"
+        },
+        "componentes": {
+          "seccion_problema": {
+            "headline": {
+              "prefix_emoji_opcional": true,
+              "formula": "El problema que enfrentas"
+            },
+            "descripcion_dolor": {
+              "obligatorio": true,
+              "tono": "empatico_directo",
+              "max_palabras": 50
+            },
+            "lista_dolores": {
+              "max_items": 3,
+              "estilo": "iconos_negativos",
+              "animacion": "reveal-secuencial"
+            }
+          },
+          "seccion_solucion": {
+            "headline": {
+              "formula": "Nuestra solución"
+            },
+            "solucion_clara": {
+              "obligatorio": true,
+              "max_palabras": 40
+            },
+            "diferenciador_clave": {
+              "obligatorio": true,
+              "estilo": "highlight_glass",
+              "icono": true
+            },
+            "human_scribble": {
+              "opcional": true,
+              "tipo": "flecha_conectora"
+            }
+          },
+          "visual_transicion": {
+            "tipo": ["before_after", "transformacion_visual", "icono_grande"],
+            "estilo": "liquid_glass"
+          }
+        }
+      },
+      "descubrimiento": {
+        "obligatorio": true,
+        "orden": 3,
+        "scrollytelling": {
+          "entrada": "stagger-grid",
+          "threshold": 0.15,
+          "items_aparecen_secuencialmente": true,
+          "delay_entre_items": "0.08s"
+        },
+        "layout": {
+          "tipo": "bento_grid",
+          "obligatorio": true,
+          "configuracion_bento": {
+            "gap": "16px",
+            "responsive": {
+              "mobile": {
+                "columnas": 1,
+                "items_por_fila": 1
+              },
+              "tablet": {
+                "columnas": 2,
+                "permitir_items_destacados": true
+              },
+              "desktop": {
+                "columnas": 3,
+                "columnas_max": 4,
+                "permitir_items_2x2": true,
+                "permitir_items_2x1": true
+              }
+            },
+            "item_destacado": {
+              "span_columnas": 2,
+              "span_filas": 2,
+              "estilo_especial": true
+            }
+          }
+        },
+        "bloques": {
+          "min": 3,
+          "max": 6,
+          "componentes_por_bloque": {
+            "contenedor": {
+              "estilo": "liquid_glass_card",
+              "border_radius": "20px",
+              "padding": "24px",
+              "hover_effect": {
+                "lift": true,
+                "glow_borde": true,
+                "escala": 1.02
+              }
+            },
+            "icono_o_imagen": {
+              "obligatorio": true,
+              "tipos": ["icono_gradiente", "imagen_webp", "emoji_grande", "ilustracion_mini"],
+              "tamaño": "48px"
+            },
+            "nombre": {
+              "obligatorio": true,
+              "tipografia": "semi-bold",
+              "tamaño": "1.125rem"
+            },
+            "problema_que_resuelve": {
+              "obligatorio": true,
+              "max_palabras": 15,
+              "opacidad": 0.7
+            },
+            "beneficio": {
+              "obligatorio": true,
+              "max_palabras": 20,
+              "estilo": "texto_destacado"
+            },
+            "cta_mini": {
+              "opcional": true,
+              "estilo": "link_con_flecha"
+            }
+          }
+        },
+        "divulgacion_progresiva": {
+          "habilitado": true,
+          "mostrar_inicial": 3,
+          "boton_ver_mas": {
+            "texto": "Ver más",
+            "estilo": "ghost_glass",
+            "expande_con_animacion": true
+          }
+        },
+        "variacion_creador": {
+          "ejemplos_contenido": true,
+          "mostrar_resultados": true,
+          "grid_portfolio": true
+        }
+      },
+      "confianza_beneficios": {
+        "obligatorio": true,
+        "orden": 4,
+        "scrollytelling": {
+          "entrada": "fade-in-up",
+          "threshold": 0.2,
+          "contador_animado": true
+        },
+        "layout": {
+          "tipo": "flex_wrap_centrado",
+          "mobile": "stack_vertical",
+          "gap": "24px"
+        },
+        "bloques": {
+          "min": 3,
+          "max": 5,
+          "componentes_por_bloque": {
+            "contenedor": {
+              "estilo": "glass_card_sutil",
+              "padding": "20px",
+              "border_radius": "16px",
+              "ancho_min": "280px",
+              "ancho_max": "350px"
+            },
+            "icono": {
+              "obligatorio": true,
+              "estilo": "gradiente_glow",
+              "tamaño": "40px",
+              "animacion_hover": true
+            },
+            "titulo": {
+              "obligatorio": true,
+              "tipografia": "bold",
+              "tamaño": "1rem"
+            },
+            "frase_concreta": {
+              "obligatorio": true,
+              "max_palabras": 15,
+              "opacidad": 0.8
+            },
+            "metrica": {
+              "opcional": true,
+              "estilo": "numero_grande_gradiente",
+              "animacion": "count-up"
+            }
+          }
+        },
+        "prueba_social_real": {
+          "obligatorio": true,
+          "tipos_permitidos": [
+            "testimonios_cards",
+            "logos_clientes",
+            "metricas_reales",
+            "capturas_reviews"
+          ],
+          "estilo_testimonios": {
+            "layout": "carousel_o_grid",
+            "mostrar_foto": true,
+            "mostrar_nombre": true,
+            "mostrar_cargo": true,
+            "estilo_card": "liquid_glass"
+          }
+        }
+      },
+      "accion_simple": {
+        "obligatorio": true,
+        "orden": 5,
+        "scrollytelling": {
+          "entrada": "fade-in",
+          "threshold": 0.3
+        },
+        "tipo": {
+          "default": "faq_acordeon",
+          "alternativas": ["bloques_objeciones", "comparativa_antes_despues", "timeline_proceso"]
+        },
+        "faq_acordeon": {
+          "estilo": "liquid_glass_expandible",
+          "max_items": 6,
+          "componentes_item": {
+            "pregunta": {
+              "tipografia": "semi-bold",
+              "icono_expandir": "chevron_rotable"
+            },
+            "respuesta": {
+              "padding": "16px",
+              "animacion_expandir": "slide-down-fade"
+            }
+          },
+          "interaccion": {
+            "solo_uno_abierto": true,
+            "animacion_suave": true
+          }
+        },
+        "bloques_objeciones": {
+          "layout": "grid_2_columnas",
+          "card_estilo": "liquid_glass_sutil",
+          "componentes": {
+            "objecion": {
+              "prefijo": "💭",
+              "estilo": "italica"
+            },
+            "respuesta": {
+              "estilo": "directo_confiado"
+            }
+          }
+        },
+        "reducir_friccion": true,
+        "human_scribble": {
+          "opcional": true,
+          "tipo": "checkmarks_dibujados"
+        }
+      },
+      "cta_final": {
+        "obligatorio": true,
+        "orden": 6,
+        "scrollytelling": {
+          "entrada": "scale-in-up",
+          "threshold": 0.4,
+          "efecto_spotlight": true
+        },
+        "layout": {
+          "tipo": "centrado_dramatico",
+          "padding_vertical": "80px",
+          "fondo": "gradiente_sutil_o_glass"
+        },
+        "componentes": {
+          "headline_cierre": {
+            "obligatorio": true,
+            "formula": "Recordatorio del beneficio principal",
+            "tipografia": "expresiva_grande",
+            "tamaño": "clamp(1.75rem, 5vw, 3rem)"
+          },
+          "subtext_urgencia": {
+            "opcional": true,
+            "ejemplos": ["Empieza hoy", "No esperes más", "Tu momento es ahora"]
+          },
+          "cta_grande": {
+            "obligatorio": true,
+            "altura_min_px": 56,
+            "padding_horizontal": "48px",
+            "border_radius": "20px",
+            "estilo": "liquid_glass_glow_intenso",
+            "tipografia": "bold",
+            "tamaño_texto": "1.125rem",
+            "micro_interaccion": {
+              "hover_scale": 1.05,
+              "hover_glow_intenso": true,
+              "pulse_sutil": true
+            }
+          },
+          "microcopy_seguridad": {
+            "obligatorio": true,
+            "posicion": "debajo_cta",
+            "estilo": "texto_pequeño_opaco"
+          },
+          "human_scribble": {
+            "opcional_elite": true,
+            "tipo": "flecha_hacia_boton"
+          }
+        }
+      },
+      "footer": {
+        "obligatorio": true,
+        "orden": 7,
+        "estilo": "minimalista_glass",
+        "componentes": {
+          "logo_mini": true,
+          "links_legales": ["Privacidad", "Términos"],
+          "redes_sociales": {
+            "iconos_solo": true,
+            "hover_glow": true
+          },
+          "copyright": true
+        }
+      }
+    }
+  },
+  "componentes_globales": {
+    "modales": {
+      "estilo": "liquid_glass_centrado",
+      "backdrop": "blur(8px)",
+      "animacion_entrada": "scale-fade-in",
+      "animacion_salida": "scale-fade-out",
+      "cerrar_click_fuera": true,
+      "cerrar_esc": true
+    },
+    "tooltips": {
+      "estilo": "glass_mini",
+      "posicion": "auto",
+      "delay_ms": 300
+    },
+    "loaders": {
+      "estilo": "spinner_gradiente",
+      "skeleton_screens": true
+    },
+    "notificaciones": {
+      "estilo": "toast_glass",
+      "posicion": "bottom_center",
+      "duracion_ms": 4000
+    }
+  },
+  "animaciones_scrollytelling": {
+    "biblioteca_css": {
+      "fade-in-up": {
+        "from": { "opacity": 0, "transform": "translateY(30px)" },
+        "to": { "opacity": 1, "transform": "translateY(0)" },
+        "duracion": "0.6s",
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+      },
+      "fade-blur-in": {
+        "from": { "opacity": 0, "filter": "blur(10px)" },
+        "to": { "opacity": 1, "filter": "blur(0)" },
+        "duracion": "0.8s",
+        "easing": "ease-out"
+      },
+      "scale-in-up": {
+        "from": { "opacity": 0, "transform": "scale(0.95) translateY(20px)" },
+        "to": { "opacity": 1, "transform": "scale(1) translateY(0)" },
+        "duracion": "0.5s",
+        "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+      },
+      "stagger-grid": {
+        "descripcion": "Cada item aparece con delay incremental",
+        "delay_formula": "calc(var(--item-index) * 0.08s)"
+      },
+      "draw-in": {
+        "descripcion": "Para SVG hand-drawn",
+        "stroke_dasharray": "1000",
+        "stroke_dashoffset_from": 1000,
+        "stroke_dashoffset_to": 0,
+        "duracion": "1s"
+      },
+      "float-subtle": {
+        "keyframes": "translateY alternando ±10px",
+        "duracion": "6s",
+        "iteracion": "infinite",
+        "easing": "ease-in-out"
+      },
+      "count-up": {
+        "descripcion": "Números que incrementan",
+        "js_minimo_requerido": true
+      }
+    },
+    "intersection_observer_config": {
+      "root": null,
+      "root_margin": "0px 0px -10% 0px",
+      "threshold": [0, 0.1, 0.2, 0.5, 1]
+    }
+  }
+}
