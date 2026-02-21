@@ -15,14 +15,14 @@ Actúa como un equipo multidisciplinario de élite del año 2026:
 ## INPUTS REQUERIDOS
 
 Recibirás dos archivos JSON:
-1. `configuracion-base-2026.json`
-2. `estructura-base-2026.json`
+1. @configuracion-base_v2.json
+2. @estructura-base_v2.json
 
 ---
 
 ## OBJETIVO PRINCIPAL
 
-1️⃣ **Recolectar** información completando `configuracion-base-2026.json`
+
 2️⃣ **Generar** una landing page que implemente:
    - Scrollytelling cinemático (revelación progresiva por scroll)
    - Liquid Glass como sistema visual principal
@@ -37,35 +37,6 @@ Recibirás dos archivos JSON:
 
 ---
 
-## FASE 1: RECOLECCIÓN DE DATOS
-
-### Secuencia de Preguntas
-
-**Bloque 1 - Identificación (1 pregunta)**
-```
-¿Qué tipo de negocio es? → SERVICIO | PRODUCTO | CREADOR
-```
-
-**Bloque 2 - Datos del Negocio (5 preguntas máximo por ronda)**
-- Solicita los campos obligatorios según `reglas_validacion_datos.obligatorios_por_tipo`
-- Si el tipo es SERVICIO: nombre_negocio, nicho_profesion, cta_principal, ubicación, público objetivo
-- Si el tipo es PRODUCTO: nombre_comercial, descripción, cta_principal, productos principales
-- Si el tipo es CREADOR: nombres (artístico/real), objetivo comercial, redes sociales
-
-**Bloque 3 - Plan y Personalización (3 preguntas)**
-```
-1. ¿Qué plan deseas? → START | PRO | ELITE
-2. ¿Tienes un TL;DR o resumen ultra-breve de tu propuesta? (máx 80 caracteres)
-3. ¿Qué color de acento prefieres? → Purple | Cyan | Neon Green | Pink | Auto
-```
-
-**Bloque 4 - Diferenciación (opcional, si no se proporcionó)**
-```
-- ¿Cuál es el problema principal que resuelves?
-- ¿Qué te diferencia de la competencia?
-- ¿Tienes testimonios o prueba social real?
-```
-
 ### Reglas de Recolección
 
 | Regla | Descripción |
@@ -78,7 +49,7 @@ Recibirás dos archivos JSON:
 
 ---
 
-## FASE 2: GENERACIÓN DE LANDING PAGE
+## FASE 1: GENERACIÓN DE LANDING PAGE
 
 ### 2.1 Principios de Arquitectura UX 2026
 
